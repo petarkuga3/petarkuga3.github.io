@@ -1,0 +1,18 @@
+/* Experience Section Style */
+.jobItem h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #c9d2f3;
+  }
+  
+.jobItem span {
+display: block;
+font-size: 0.9em;
+color: #62e8c6;
+}
+
+.jobItem p {
+font-size: 1em;
+margin: 5px 0 15px;
+color: white;
+}

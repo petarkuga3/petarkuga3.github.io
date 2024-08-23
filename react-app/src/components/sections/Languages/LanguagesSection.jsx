@@ -1,37 +1,24 @@
 import React from "react";
+import SectionMain from "../SectionMain";
+import LanguagesItem from "./LanguagesItem";
+import styles from "./Languages.module.css";
 
-// Languages Section
-const LanguagesSection = (props) => {
-    return(
-        <section id="languages">
-            <h2>Language skills</h2>
-            <ul class="languages-list">
-                <li class="language-item">
-                    <strong>Dutch:</strong>
-                    <div class="progress-bar">
-                        <div class="progress" style={{backgroundColor: '#0078d7'}}></div>
-                    </div>
-                </li>
-                <li class="language-item">
-                    <strong>English:</strong>
-                    <div class="progress-bar">
-                        <div class="progress" style={{backgroundColor: '#339d25'}}></div>
-                    </div>
-                </li>
-                <li class="language-item">
-                    <strong>French:</strong>
-                    <div class="progress-bar">
-                        <div class="progress" style={{backgroundColor: '#ff9700'}}></div>
-                    </div>
-                </li>
-                <li class="language-item">
-                    <strong>Serbian:</strong>
-                    <div class="progress-bar">
-                        <div class="progress" style={{backgroundColor: '#ee4c2c'}}></div>
-                    </div>
-                </li>
+const languagesData = [
+    { language: "Dutch", progressColor: "#0078d7", progressWidth: "100%" },
+    { language: "English", progressColor: "#339d25", progressWidth: "100%" },
+    { language: "French", progressColor: "#ff9700", progressWidth: "50%" },
+    { language: "Serbian", progressColor: "#ee4c2c", progressWidth: "90%" }
+];
+
+const LanguagesSection = () => {
+    return (
+        <SectionMain id="languages" className="languages-section" title="Language skills">
+            <ul className={styles.languagesList}>
+                {languagesData.map((item, index) => (
+                    <LanguagesItem key={index} language={item.language} progressColor={item.progressColor} progressWidth={item.progressWidth}/>
+                ))}
             </ul>
-        </section>
+        </SectionMain>
     );
 }
 

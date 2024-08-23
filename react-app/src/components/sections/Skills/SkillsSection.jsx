@@ -1,39 +1,39 @@
 import React from "react";
+import SectionMain from "../SectionMain";
+import SkillsCategory from "./SkillsCategory";
+import styles from "./Skills.module.css";
 
-// Skills Section
-const SkillsSection = (props) => {
-    return(
-        <section id="skills">
-            <h2>Skills</h2>
+const skillsData = {
+    "Programming Languages": [
+        { id: "csharp-skill", name: "C#" },
+        { id: "javascript-skill", name: "JavaScript" },
+        { id: "react-skill", name: "React" },
+        { id: "reactnative-skill", name: "React Native" },
+        { id: "nodejs-skill", name: "NodeJS" },
+        { id: "python-skill", name: "Python" }
+    ],
+    "Systems and Web Hosting": [
+        { id: "windowshosting-skill", name: "Windows Hosting" },
+        { id: "linuxhosting-skill", name: "Linux Hosting" },
+        { id: "windowad-skill", name: "Windows AD" }
+    ],
+    "Tools": [
+        { id: "vs-tool", name: "Visual Studio" },
+        { id: "sublime-tool", name: "Sublime Text" },
+        { id: "excel-tool", name: "Excel" },
+        { id: "jira-tool", name: "Jira" },
+        { id: "gitkraken-tool", name: "GitKraken" },
+        { id: "pytorch-tool", name: "PyTorch" }
+    ]
+};
 
-            <h3>Programming Languages:</h3>
-            <ul>
-                "<li id="csharp-skill" class="skill-item">C#</li>
-                <li id="javascript-skill" class="skill-item">JavaScript</li>
-                <li id="react-skill" class="skill-item">React</li>
-                <li id="reactnative-skill" class="skill-item">React Native</li>
-                <li id="nodejs-skill" class="skill-item">NodeJS</li>
-                <li id="python-skill" class="skill-item">Python</li>"
-            </ul>
-
-            <h3>Systems and Web Hosting:</h3>
-            <ul>
-                "<li id="windowshosting-skill" class="skill-item">Windows Hosting</li>
-                <li id="linuxhosting-skill" class="skill-item">Linux Hosting</li>
-                <li id="windowad-skill" class="skill-item">Windows AD</li>"
-            </ul>
-
-            <h3>Tools:</h3>
-            <ul>
-                "<li id="vs-tool" class="skill-item">Visual Studio</li>
-                <li id="sublime-tool" class="skill-item">Sublime Text</li>
-                <li id ="excel-tool" class="skill-item">Excel</li>
-                <li id="jira-tool" class="skill-item">Jira</li>
-                <li id="gitkraken-tool" class="skill-item">GitKraken</li>
-                <li id="pytorch-tool" class="skill-item">PyTorch</li>"
-
-            </ul>
-        </section>
+const SkillsSection = () => {
+    return (
+        <SectionMain id="skills" className={styles.skillsSection} title="Skills">
+            {Object.entries(skillsData).map(([category, skills]) => (
+                <SkillsCategory key={category} title={category} skills={skills} />
+            ))}
+        </SectionMain>
     );
 }
 

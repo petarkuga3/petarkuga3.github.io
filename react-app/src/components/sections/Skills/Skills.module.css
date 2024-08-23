@@ -1,0 +1,40 @@
+/* Skills Section Styles */
+
+.skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.skillsItem {
+    background: #0a1930;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skillsItem:hover {
+    transform: translateY(-0.25rem);
+}
+
+:global(#skills li#csharp-skill:hover){ background: #701c7a; } /* C# */
+:global(#skills li#javascript-skill:hover){ background: #d2bf44; } /* JavaScript */
+:global(#skills li#react-skill:hover){ background: #0385aa; } /* React */
+:global(#skills li#reactnative-skill:hover){ background: #0385aa; } /* React Native */
+:global(#skills li#nodejs-skill:hover){ background: #339d25; } /* NodeJS */
+:global(#skills li#python-skill:hover){ background: #3a709c; } /* Python */
+
+:global(#skills li#windowshosting-skill:hover){ background: #0385aa; } /* Windows Hosting */
+:global(#skills li#linuxhosting-skill:hover){ background: #d2bf44; } /* Linux Hosting */
+:global(#skills li#windowad-skill:hover){ background: #3a709c; } /* Windows AD */
+
+:global(#skills li#vs-tool:hover){ background: #0078d7; } /* Visual Studio */
+:global(#skills li#sublime-tool:hover){ background: #ff9700; } /* Sublime Text */
+:global(#skills li#excel-tool:hover){ background: #339d25; } /* Excel */
+:global(#skills li#jira-tool:hover){ background: #0052cc; } /* Jira */
+:global(#skills li#gitkraken-tool:hover){ background: #000000; } /* GitKraken */
+:global(#skills li#pytorch-tool:hover){ background: #ee4c2c; } /* PyTorch */

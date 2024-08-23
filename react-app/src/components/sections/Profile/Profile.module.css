@@ -1,0 +1,58 @@
+/* Profile Section Style */
+  .profileSection {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .profilePicAndLinks {
+    flex: 0 0 auto;
+    margin-right: 20px;
+  }
+  
+  .profilePicAndLinks img {
+    width: 160px;
+    border-radius: 50%;
+    margin-bottom: 1.4rem;
+  }
+
+  .profileLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .profileLinks i{
+      font-size: x-large;
+      margin: 5px;
+  }
+  
+  .personalDescription, .additionalInfo {
+    flex: 1 1 auto;
+  }
+  
+  .personalDescription h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .personalDescription h3 {
+    margin: 5px 0;
+    font-size: 20px;
+    color: #c9d2f3;
+  }
+  
+  .personalDescription p {
+    margin: 10px 0;
+    color: white;
+  }
+  
+  .additionalInfo {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .additionalInfo li {
+    margin-right: 20px;
+  }

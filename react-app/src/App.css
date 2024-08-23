@@ -1,5 +1,3 @@
-
-
 html, body, .App {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -40,148 +38,42 @@ section h2 {
   margin-bottom: 20px;
 }
 
-/* Profile Section */
-#personal-information {
+/* Navigation Styles */
+
+div .navigation {
+  text-align: right;
   display: flex;
-  align-items: flex-start;
-  padding: 20px;
+  justify-content: flex-end;
+  margin: 0 auto;
+  padding: 0px;
 }
 
-.profile-pic {
-  flex: 0 0 auto;
-  margin-right: 20px;
+nav ul {
+  display: flex;
+  flex-direction: row;
 }
 
-.personal-description, .additional-info {
-  flex: 1 1 auto;
+nav ul li {
+  margin: 0 1rem;
 }
 
-.personal-description h2 {
-  margin: 0;
-  font-size: 24px;
-}
-
-.personal-description h3 {
-  margin: 5px 0;
-  font-size: 20px;
-  color: #c9d2f3;
-}
-
-.personal-description p {
-  margin: 10px 0;
+nav ul li a {
+  font-size: 1rem;
+  font-weight: ;
+  text-decoration: none;
   color: white;
+  font-weight: bold;
 }
 
-.additional-info {
-  display: flex;
-  align-items: flex-start;
+nav ul li a:hover {
+  color: #007bff;
 }
 
-.additional-info li {
-  margin-right: 20px;
+/* Profile Section Styles */
+
+@media (max-width: 768px) {
+  #profile {
+      flex-direction: column;
+      align-items: center;
+  }
 }
-
-/* Experience Section */
-.job h3 {
-  font-size: 1.5em;
-  margin: 10px 0;
-  color: #c9d2f3;
-}
-
-.job span {
-  display: block;
-  font-size: 0.9em;
-  color: #62e8c6;
-}
-
-.job p {
-  font-size: 1em;
-  margin: 5px 0 15px;
-  color: white;
-}
-
-/* Education Section */
-.education-item h3 {
-  font-size: 1.3em;
-  margin: 10px 0;
-  color: #c9d2f3;
-}
-
-.education-item span {
-  display: block;
-  font-size: 0.9em;
-  color: #62e8c6;
-}
-
-/* Skills Section */
-#skills ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#skills li {
-  background: #0a1930;
-  color: #fff;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
-  font-size: 1em;
-}
-
-.skill-item, .language-item {
-  margin: 10px 0;
-  transition: transform 0.3s ease-in-out;
-}
-
-.skill-item:hover {
-  transform: translateY(-0.25rem);
-}
-
-
-#skills li#csharp-skill:hover{ background: #701c7a; } /* C# */
-#skills li#javascript-skill:hover{ background: #d2bf44; } /* JavaScript */
-#skills li#react-skill:hover{ background: #0385aa; } /* React */
-#skills li#reactnative-skill:hover{ background: #0385aa; } /* React Native */
-#skills li#nodejs-skill:hover{ background: #339d25; } /* NodeJS */
-#skills li#python-skill:hover{ background: #3a709c; } /* Python */
-
-#skills li#windowshosting-skill:hover{ background: #0385aa; } /* Windows Hosting */
-#skills li#linuxhosting-skill:hover{ background: #d2bf44; } /* Linux Hosting */
-#skills li#windowad-skill:hover{ background: #3a709c; } /* Windows AD */
-
-#skills li#vs-tool:hover{ background: #0078d7; } /* Visual Studio */
-#skills li#sublime-tool:hover{ background: #ff9700; } /* Sublime Text */
-#skills li#excel-tool:hover{ background: #339d25; } /* Excel */
-#skills li#jira-tool:hover{ background: #0052cc; } /* Jira */
-#skills li#gitkraken-tool:hover{ background: #000000; } /* GitKraken */
-#skills li#pytorch-tool:hover{ background: #ee4c2c; } /* PyTorch */
-
-.progress-bar {
-  background-color: #e0e0e0;
-  border-radius: 13px;
-  padding: 3px;
-  margin: 5px 0;
-}
-
-.progress {
-  height: 20px;
-  border-radius: 10px;
-  width: 0%;
-  transition: width 0.5s ease-in-out;
-}
-
-@keyframes progressBar {
-  from { width: 0%; }
-  to { width: var(--width); } 
-}
-
-.language-item .progress {
-  animation: progressBar 0.5s ease-in-out forwards;
-  width: var(--width, 0%);
-}
-
-.language-item:nth-child(1) { --width: 100%; } /* Dutch */
-.language-item:nth-child(2) { --width: 100%; } /* English */
-.language-item:nth-child(3) { --width: 50%; } /* French */
-.language-item:nth-child(4) { --width: 90%; } /* Serbian */
-
