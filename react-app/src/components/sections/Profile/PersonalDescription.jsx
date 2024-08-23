@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Profile.module.css";
-import Navigation from "../Navigation";
 
 const PersonalDescription = () => {
     return (
@@ -18,8 +17,6 @@ const PersonalDescription = () => {
                 <li><strong>E-mail:</strong> <a href="mailto:petarkuga@gmail.com">petarkuga@gmail.com</a></li>
                 <li><strong>Phone:</strong> +32 483 03 18 60</li>
             </ul>
-
-            <Navigation />
         </div>
     );
 };

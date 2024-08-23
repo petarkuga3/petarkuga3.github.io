@@ -23,9 +23,10 @@
     justify-content: space-evenly;
   }
 
-  .profileLinks i{
-      font-size: x-large;
-      margin: 5px;
+  .profileLinks i {
+    max-width: 100%; 
+    font-size: 1.5rem;
+    margin: 5px;
   }
   
   .personalDescription, .additionalInfo {
@@ -56,3 +57,32 @@
   .additionalInfo li {
     margin-right: 20px;
   }
+
+  /* Mobile Styles */
+@media (max-width: 768px) {
+  .profileSection {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .profilePicAndLinks {
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .personalDescription, .additionalInfo {
+    max-width: 100%;
+  }
+
+  .additionalInfo {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  .additionalInfo li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
