@@ -75,5 +75,15 @@ nav ul li a:hover {
   section {
     margin: 1rem;
   }
+  
+  .App{
+    font-size: 0.9rem;
+  }
+
+  .App h3{
+    font-size: 1.2rem;
+  }
+
+
 
 }
