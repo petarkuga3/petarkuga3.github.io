@@ -2,7 +2,7 @@ import React from "react";
 import SectionMain from "../SectionMain";
 import JobList from "./JobList";
 
-import { useLanguage } from "../../../context/LanguageContext";
+import { useLanguage } from "../../../features/language/LanguageContext";
 
 // Experience Section
 const ExperienceSection = () => {

@@ -4,7 +4,7 @@ import styles from "./Profile.module.css";
 import picture from "../../../images/profile-picture.png";
 
 import ProfilePictureAndLinks from "./ProfilePictureAndLinks";
-import PersonalDescription from "./PersonalDescription";
+import PersonalDescription from "./ProfileDescription";
 
 const ProfileSection = () => {
     return(

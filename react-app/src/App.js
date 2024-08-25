@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
 import Settings from "./components/sections/Settings";
+
 import ProfileSection from "./components/sections/Profile/ProfileSection";
 import ExperienceSection from "./components/sections/Experience/ExperienceSection";
 import EducationSection from "./components/sections/Education/EducationSection";
 import SkillsSection from "./components/sections/Skills/SkillsSection";
 import LanguagesSection from "./components/sections/Languages/LanguagesSection";
+
 import './App.css';
 
 function App() {

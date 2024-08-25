@@ -32,22 +32,22 @@
     margin: 5px;
   }
   
-  .personalDescription, .additionalInfo {
+  .profileDescription, .additionalInfo {
     flex: 1 1 auto;
   }
   
-  .personalDescription h2 {
+  .profileDescription h2 {
     margin: 0;
     font-size: 24px;
   }
   
-  .personalDescription h3 {
+  .profileDescription h3 {
     margin: 5px 0;
     font-size: 20px;
     color: var(--h3-text-color);
   }
   
-  .personalDescription p {
+  .profileDescription p {
     margin: 10px 0;
     color: var(--p-text-color);
   }
@@ -84,7 +84,7 @@
     font-size: 2rem;
   }
 
-  .personalDescription, .additionalInfo {
+  .profileDescription, .additionalInfo {
     max-width: 100%;
   }
 

@@ -1,4 +1,5 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
+import { loadFromLocalStorage, saveToLocalStorage } from '../../store';
 
 const LanguageContext = createContext({
     language: 'EN',
@@ -9,7 +10,7 @@ const LanguageContext = createContext({
 export const useLanguage = () => useContext(LanguageContext);
 
 export const LanguageProvider = ({ children }) => {
-    const [language, setLanguage] = useState('EN');
+    const [language, setLanguage] = useState(() => loadFromLocalStorage('language', 'EN'));
     const [translations, setTranslations] = useState({});
     const [loading, setLoading] = useState(true);
 
@@ -35,7 +36,11 @@ export const LanguageProvider = ({ children }) => {
     }, [language]);
 
     const toggleLanguage = () => {
-        setLanguage(prevLanguage => (prevLanguage === 'EN' ? 'NL' : 'EN'));
+        setLanguage(prevLanguage => {
+            const newLanguage = prevLanguage === 'EN' ? 'NL' : 'EN';
+            saveToLocalStorage('language', newLanguage);
+            return newLanguage;
+        });
     };
 
     const translate = (key, defaultValue = key) => {

@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "./Profile.module.css";
 
-import { useLanguage } from "../../../context/LanguageContext";
+import { useLanguage } from "../../../features/language/LanguageContext";
 
-const PersonalDescription = () => {
+const ProfileDescription = () => {
     const { translate, loading } = useLanguage();
 
     if (loading) return null;
 
     return (
-        <div className={styles.personalDescription}>
+        <div className={styles.ProfileDescription}>
             <h2>{translate("profile-s.name")}</h2>
             <h3>{translate("profile-s.title")}</h3>
             <p>{translate("profile-s.description").split('\n').map((line, index) => (<span key={index}>{line}<br/></span>))}</p>
@@ -21,4 +21,4 @@ const PersonalDescription = () => {
     );
 };
 
-export default PersonalDescription;
+export default ProfileDescription;

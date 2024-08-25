@@ -6,13 +6,13 @@
 }
   
 .jobItem span {
-display: block;
-font-size: 0.9em;
-color: var(--span-text-color);
-}
+    display: block;
+    font-size: 0.9em;
+    color: var(--span-text-color);
+    }
 
 .jobItem p {
-font-size: 1em;
-margin: 5px 0 15px;
-color: var(--p-text-color);
+    font-size: 1em;
+    margin: 5px 0 15px;
+    color: var(--p-text-color);
 }

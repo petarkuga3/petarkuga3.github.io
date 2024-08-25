@@ -3,7 +3,7 @@ import SectionMain from "../SectionMain";
 import LanguagesItem from "./LanguagesItem";
 import styles from "./Languages.module.css";
 
-import { useLanguage } from "../../../context/LanguageContext";
+import { useLanguage } from "../../../features/language/LanguageContext";
 
 const languagesData = [
     { languageId: "dutch", progressColor: "#0078d7", progressWidth: "100%" },

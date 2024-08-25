@@ -3,7 +3,7 @@ import SectionMain from "../SectionMain";
 import SkillsCategory from "./SkillsCategory";
 import styles from "./Skills.module.css";
 
-import { useLanguage } from "../../../context/LanguageContext";
+import { useLanguage } from "../../../features/language/LanguageContext";
 
 const skillsData = {
     "programmingLanguages": [

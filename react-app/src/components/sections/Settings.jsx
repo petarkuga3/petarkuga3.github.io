@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useTheme } from "../../context/ThemeContext";
-import { useLanguage } from "../../context/LanguageContext";
+import { useTheme } from "../../features/theme/ThemeContext";
+import { useLanguage } from "../../features/language/LanguageContext";
 
 function Settings() {
     const { theme, toggleTheme } = useTheme();

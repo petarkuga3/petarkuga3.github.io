@@ -2,7 +2,7 @@ import React from "react";
 import SectionMain from "../SectionMain";
 import EducationList from "./EducationList";
 
-import { useLanguage } from "../../../context/LanguageContext";
+import { useLanguage } from "../../../features/language/LanguageContext";
 
 const EducationSection = () => {
     const { translate, loading } = useLanguage();
