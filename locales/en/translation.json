@@ -1,0 +1,94 @@
+{
+    "skills-s": {
+        "title": "Skills",
+        "categories": {
+            "programmingLanguages": "Programming Languages",
+            "systemsAndWebHosting": "Systems and Web Hosting",
+            "tools": "Tools"
+        }
+    },
+    "profile-s": {
+        "name": "Petar Kuga",
+        "title": "Junior Software Developer",
+        "description": "A junior software developer passionate about building web applications and exploring both frontend and backend development. During an internship at Lansweeper, I delved into complex projects with ASP.NET and C# which significantly enhanced my coding skills. In 2023, I studied computer programming at Hogeschool Gent, where gaining a solid foundation in programming. I am comfortable using tools like Visual Studio, Jira, and GitKraken and am always eager to learn new things. Writing clean and effective code is important to me and I look forward to contributing to your existing project.\n\n My personal interests include gaming, reading novels and machine learning.",
+        "phone": "Phone"
+    },
+    "experience-s": {
+        "title": "Work Experience",
+        "jobs": [
+            {
+                "title": "Internship: Full Stack Developer, Lansweeper",
+                "date": "02/2023 - 06/2023",
+                "description": "An internship as a full stack developer within Discovery Team 1 working on the On-prem version of Lansweeper. Main tasks included:",
+                "tasks": [
+                    "Web application development using ASP.NET (frontend) and C# (backend)",
+                    "Bug detection and resolution using ticketing through Jira",
+                    "Agile collaboration and daily progress meetings within the team",
+                    "Controlled code management of repositories using GitKraken"
+                ]
+            },
+            {
+                "title": "Administrative Clerk, Luminus",
+                "date": "03/2021 - 02/2023",
+                "description": "An administrative job as support at Luminus, Customer Care Gent. Main tasks included:",
+                "tasks": [
+                    "Managing customer dossiers (creating contracts, making corrections, ...)",
+                    "Forwarding documents and letters to customers"
+                ]
+            },
+            {
+                "title": "Administrative Clerk, Univ. Gent",
+                "date": "12/2019 - 02/2020",
+                "description": "An administrative job as support at the department of European research projects in connection with Horizon 2020. Main tasks included:",
+                "tasks": [
+                    "Looking up and requesting employment contracts",
+                    "Following up on the timesheets of the research personnel",
+                    "Data input of hours and wages using tables and pivot tables in Excel",
+                    "Retrieving timesheets and cost overviews of projects from SAP"
+                ]
+            },
+            {
+                "title": "Student Job: ICT Employee, Artevelde Hogeschool",
+                "date": "2017 - 2018",
+                "description": "A student job twice a week for the duration of 3 months, including two months during the summer holidays (helpdesk)."
+            },
+            {
+                "title": "Internship: Accounting Firm, Piens Mekerle Calfas",
+                "date": "2014",
+                "description": "An internship as assistant bookkeeper during the last year of my secondary education."
+            }
+        ]
+    },
+    "education-s": {
+        "title": "Education",
+        "items": [
+            {
+                "title": "Graduate Computer Programming",
+                "yearStart": "2021",
+                "yearEnd": "2023",
+                "institution": "Higher Education, Hogeschool Gent, Gent"
+            },
+            {
+                "title": "Accounting/Computer Science",
+                "yearStart": "2012",
+                "yearEnd": "2014",
+                "institution": "Secondary Education, PHTI, Gent"
+            },
+            {
+                "title": "Business Management",
+                "yearStart": "2012",
+                "yearEnd": "2014",
+                "institution": "Diverse Education, PHTI, Gent"
+            }
+        ]
+    },
+    "languages-s": {
+        "title": "Languages",
+        "languages": {
+            "english": "English",
+            "dutch": "Dutch",
+            "french": "French",
+            "serbian": "Serbian"
+        }
+    }
+}

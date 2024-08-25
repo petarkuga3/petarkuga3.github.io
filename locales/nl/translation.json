@@ -1,0 +1,94 @@
+{
+    "skills-s": {
+        "title": "Vaardigheden",
+        "categories": {
+            "programmingLanguages": "Programmeertalen",
+            "systemsAndWebHosting": "Systemen en Web Hosting",
+            "tools": "Tools"
+        }
+    },
+    "profile-s": {
+        "name": "Petar Kuga",
+        "title": "Junior Software Developer",
+        "description": "Een junior softwareontwikkelaar met een passie voor het bouwen van webapplicaties en het verkennen van zowel frontend- als backend-ontwikkeling. Tijdens een stage bij Lansweeper heb ik me verdiept in complexe projecten met ASP.NET en C#, wat mijn programmeervaardigheden aanzienlijk heeft verbeterd. In 2023 heb ik programmeren gestudeerd aan de Hogeschool Gent, waar ik een stevige basis in programmeren heb opgedaan. Ik ben vertrouwd met tools zoals Visual Studio, Jira en GitKraken en ben altijd leergierig om nieuwe digen bij te leren. Het schrijven van schone en effectieve code is belangrijk voor mij en ik kijk ernaar uit om bij te dragen aan uw project.\n\n Mijn persoonlijke interesses zijn gamen, boeken lezen en machine learning.",
+        "phone": "Telefoon"
+    },
+    "experience-s": {
+        "title": "Werkervaring",
+        "jobs": [
+            {
+                "title": "Stage: Full Stack Developer, Lansweeper",
+                "date": "02/2023 - 06/2023",
+                "description": "Een stage als full stack developer binnen Discovery Team 1, werkend aan de On-prem versie van Lansweeper. Met als hoofdtaken:",
+                "tasks": [
+                    "Webapplicatieontwikkeling met ASP.NET (frontend) en C# (backend)",
+                    "Foutdetectie en -oplossing via ticketing met Jira",
+                    "Agile samenwerking en dagelijkse voortgangsoverleggen binnen het team",
+                    "Beheersen van codebeheer van repositories met GitKraken"
+                ]
+            },
+            {
+                "title": "Administratief Medewerker, Luminus",
+                "date": "03/2021 - 02/2023",
+                "description": "Een administratieve job als ondersteuning binnen Luminus, Customer Care Gent. Met als hoofdtaken:",
+                "tasks": [
+                    "Beheren van klantdossiers (contracten opmaken, correcties ingeven, ...)",
+                    "Documenten en brieven doorsturen naar klanten"
+                ]
+            },
+            {
+                "title": "Administratief Medewerker, Univ. Gent",
+                "date": "12/2019 - 02/2020",
+                "description": "Een administratieve functie als ondersteuning bij de dienst Europese onderzoeksprojecten i.v.m. Horizon 2020. Met als hoofdtaken:",
+                "tasks": [
+                    "Opzoeken en aanvragen van arbeidsovereenkomsten",
+                    "Opvolgen van de urenstaten van het onderzoekspersoneel",
+                    "Data input van uren en lonen met behulp van tabellen en draaitabellen in Excel",
+                    "Ophalen van timesheets en kostenoverzichten van projecten uit SAP"
+                ]
+            },
+            {
+                "title": "Studentenjob: ICT Medewerker, Artevelde Hogeschool",
+                "date": "2017 - 2018",
+                "description": "Een studentenjob tweemaal per week gedurende 3 maanden, incl. twee maanden tijdens de zomervakantie. (helpdesk)"
+            },
+            {
+                "title": "Stage: Boekhoudkantoor, Piens Mekerle Calfas",
+                "date": "2014",
+                "description": "Een stage als hulpboekhouder tijdens het laatste jaar van het secundair onderwijs."
+            }
+        ]
+    },
+    "education-s": {
+        "title": "Opleidingen",
+        "items": [
+            {
+                "title": "Graduaat Programmeren",
+                "yearStart": "2021",
+                "yearEnd": "2023",
+                "institution": "Hoger Onderwijs, Hogeschool Gent, Gent"
+            },
+            {
+                "title": "Boekhouden/Informatica",
+                "yearStart": "2012",
+                "yearEnd": "2014",
+                "institution": "Secundair Onderwijs, PHTI, Gent"
+            },
+            {
+                "title": "Bedrijfsbeheer",
+                "yearStart": "2012",
+                "yearEnd": "2014",
+                "institution": "Diverse Opleidingen, PHTI, Gent"
+            }
+        ]
+    },
+    "languages-s": {
+        "title": "Talen",
+        "languages": {
+            "english": "Engels",
+            "dutch": "Nederlands",
+            "french": "Frans",
+            "serbian": "Servisch"
+        }
+    }
+}
