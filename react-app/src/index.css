@@ -11,3 +11,66 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Theme Styles Defaults
+
+[data-theme='light']  {
+  --body-background-color: white;
+  --section-background-color: white;
+  --skills-background-color: white;
+  --profile-links-background-color: #0a1930;
+
+  --border-color: black;
+
+  --h3-text-color: black;
+  --p-text-color: black;
+  --a-text-color: black;
+  --span-text-color: black;
+}
+
+[data-theme='dark'] {
+  --body-background-color: #0a1930;
+  --profile-links-background-color: #0a1930;
+  --skills-background-color: #0a1930;
+  --section-background-color: #172b46;
+
+  --border-color: #ffffff;
+
+  --h3-text-color: #c9d2f3;
+  --p-text-color: #ffffff;
+  --a-text-color: #c9d2f3;
+  --span-text-color: #62e8c6;
+}
+*/
+
+/* Theme Styles */
+
+[data-theme='dark'] {
+  --body-background-color: #0a1930;
+  --profile-links-background-color: #0a1930;
+  --skills-background-color: #0a1930;
+  --section-background-color: #172b46;
+
+  --border-color: #ffffff;
+
+  --h2-text-color: #ffffff;
+  --h3-text-color: #c9d2f3;
+  --p-text-color: #ffffff;
+  --a-text-color: #bb86fc;
+  --span-text-color: #62e8c6;
+}
+
+[data-theme='light'] {
+  --body-background-color: #e9ecef;
+  --section-background-color: #f8f9fa;
+  --skills-background-color: #dee2e6;
+  --profile-links-background-color: #adb5bd;
+
+  --border-color: #ced4da;
+
+  --h2-text-color: #343a40;
+  --h3-text-color: #495057;
+  --p-text-color: #6c757d;
+  --a-text-color: #dc3545;
+  --span-text-color: #fd7e14;
+}

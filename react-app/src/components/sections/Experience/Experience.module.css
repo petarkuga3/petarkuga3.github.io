@@ -2,17 +2,17 @@
 .jobItem h3 {
     font-size: 1.5em;
     margin: 10px 0;
-    color: #c9d2f3;
-  }
+    color:var(--h3-text-color);
+}
   
 .jobItem span {
 display: block;
 font-size: 0.9em;
-color: #62e8c6;
+color: var(--span-text-color);
 }
 
 .jobItem p {
 font-size: 1em;
 margin: 5px 0 15px;
-color: white;
+color: var(--p-text-color);
 }

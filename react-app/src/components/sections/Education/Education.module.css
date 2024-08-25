@@ -3,11 +3,11 @@
 .educationItem h3 {
     font-size: 1.3em;
     margin: 10px 0;
-    color: #c9d2f3;
+    color: var(--h3-text-color);
 }
   
 .educationItem span {
     display: block;
     font-size: 0.9em;
-    color: #62e8c6;
+    color: var(--span-text-color);
 }

@@ -3,12 +3,12 @@ html, body, .App {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #0a1930;
-  color: white;
+  background-color: var(--body-background-color);
+  color: var(--p-text-color);
 }
 
 a {
-  color: #c9d2f3;
+  color: var(--a-text-color);
 }
 
 h1, h2, h3 {
@@ -21,57 +21,95 @@ ul {
   padding: 0;
 }
 
+.skillsAndLanguages-container {
+  display: flex;
+  justify-content: center;
+  max-width: 840px;
+  margin: 1px auto;
+  gap: 20px;
+}
+
+.skillsAndLanguages-container section {
+  width: 100%;
+  margin: 0;
+}
+
+/* Settings Styles */
+
+.settings-menu {
+  position: fixed;
+  top: 32px;
+  right: 25px;
+  z-index: 1000;
+  user-select: none;
+}
+
+.settings-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 10px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.menu-content.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.language-button, .theme-button {
+  text-align: center;
+  min-width: 43px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: inherit;
+  padding: 5px 10px;
+  transition: transform 0.2s ease;
+}
+
+.language-button:hover, .theme-button:hover {
+  transform: scale(1.1);
+}
+
 /* Section Styles */
 section {
   margin: 20px auto;
   padding: 20px;
   max-width: 800px;
-  background: #172b46;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: var(--section-background-color);
   user-select: none;
   border-radius: 10px;
 }
 
 section h2 {
-  border-bottom: 2px solid white;
+  color: var(--h2-text-color);
+  border-bottom: 2px solid var(--border-color);
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
 
-/* Navigation Styles (Not Used)*/
+/* Responsive Styles */
 
-div .navigation {
-  text-align: right;
-  display: flex;
-  justify-content: flex-end;
-  margin: 0 auto;
-  padding: 0px;
-}
+@media (max-width: 1024px) {
+  .settings-menu {
+    position: absolute;
+  }
 
-nav ul {
-  display: flex;
-  flex-direction: row;
-}
-
-nav ul li {
-  margin: 0 1rem;
-}
-
-nav ul li a {
-  font-size: 1rem;
-  font-weight: ;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  color: #007bff;
-}
-
-/* Reesponsive Styles */
-
-@media (max-width: 768px) {
   section {
     margin: 1rem;
   }
@@ -83,7 +121,5 @@ nav ul li a:hover {
   .App h3{
     font-size: 1.2rem;
   }
-
-
-
 }
+

@@ -1,5 +1,9 @@
 /* Skills Section Styles */
 
+h3 {
+    color: var(--h3-text-color);
+}
+
 .skillsList {
     display: flex;
     flex-wrap: wrap;
@@ -8,8 +12,8 @@
 }
 
 .skillsItem {
-    background: #0a1930;
-    color: #fff;
+    background: var(--skills-background-color);
+    color: var(--p-text-color);
     padding: 10px 20px;
     margin: 5px;
     border-radius: 5px;
@@ -18,6 +22,7 @@
 }
 
 .skillsItem:hover {
+    color: #ffffff;
     transform: translateY(-0.25rem);
 }
 
@@ -38,3 +43,17 @@
 :global(#skills li#jira-tool:hover){ background: #0052cc; } /* Jira */
 :global(#skills li#gitkraken-tool:hover){ background: #000000; } /* GitKraken */
 :global(#skills li#pytorch-tool:hover){ background: #ee4c2c; } /* PyTorch */
+
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+    .skillsItem {
+        background: var(--skills-background-color);
+        color: var(--p-text-color);
+        padding: 10px 12px;
+        margin: 5px;
+        border-radius: 5px;
+        font-size: 1em;
+        transition: transform 0.3s ease-in-out;
+    }
+}

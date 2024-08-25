@@ -1,4 +1,5 @@
 import React from "react";
+
 import styles from "./Profile.module.css";
 import picture from "../../../images/profile-picture.png";
 
